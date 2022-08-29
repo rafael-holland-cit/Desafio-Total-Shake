@@ -27,6 +27,11 @@ public class PedidoController {
         return ResponseEntity.ok().body(service.findById(id));
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<PedidoDTO> updatePedido(@PathVariable Long id, @RequestBody PedidoDTO dto){
+        return ResponseEntity.ok().body(service.update(id, dto));
+    }
+
     @PostMapping
     public ResponseEntity<PedidoDTO> savePedido(@RequestBody PedidoDTO pedidoDTO){
         return ResponseEntity.status(200).body(service.insert(pedidoDTO));
