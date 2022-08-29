@@ -36,4 +36,10 @@ public class PedidoController {
     public ResponseEntity<PedidoDTO> savePedido(@RequestBody PedidoDTO pedidoDTO){
         return ResponseEntity.status(200).body(service.insert(pedidoDTO));
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<PedidoDTO> deletePedido(@PathVariable Long id){
+        service.delete(id);
+        return ResponseEntity.noContent().build();
+    }
 }
