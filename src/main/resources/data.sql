@@ -1,0 +1,10 @@
+INSERT INTO pedido (data_hora, status) VALUES ('2020-07-14T10:00:00Z', 'REALIZADO')
+INSERT INTO pedido (data_hora, status) VALUES ('2022-08-26T10:00:00Z', 'CANCELADO')
+INSERT INTO pedido (data_hora, status) VALUES ('2022-08-25T10:00:00Z', 'PAGO')
+INSERT INTO pedido (data_hora, status) VALUES ('2022-08-24T10:00:00Z', 'REALIZADO')
+INSERT INTO pedido (data_hora, status) VALUES ('2022-08-23T10:00:00Z', 'REALIZADO')
+
+INSERT INTO ITEM_PEDIDO(descricao, quantidade, fk_pedido) VALUES ('1x MilkShake Grande / Toppings: Morango / Mel /', 1, 2)
+INSERT INTO ITEM_PEDIDO(descricao, quantidade, fk_pedido) VALUES ('1x MilkShake Grande / Toppings: Morango / Mel /', 2, 1)
+INSERT INTO ITEM_PEDIDO(descricao, quantidade, fk_pedido) VALUES ('1x MilkShake Grande / Toppings: Morango / Mel /', 3, 3)
+INSERT INTO ITEM_PEDIDO(descricao, quantidade, fk_pedido) VALUES ('1x MilkShake Grande / Toppings: Morango / Mel /', 1, 1)
